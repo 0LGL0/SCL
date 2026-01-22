@@ -30,6 +30,7 @@ def calculate(rawString):
             arr.pop(i)
             arr.pop(i - 1)
             arr.insert(i - 1, divMulRes)
+            i -= 1
 
         i += 1
     i = 0
@@ -43,3 +44,7 @@ def calculate(rawString):
         i += 1
 
     return res
+
+
+res = calculate("3+5*2*2")
+print(res)
