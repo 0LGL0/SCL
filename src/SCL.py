@@ -1,9 +1,10 @@
-def calculate(rawString):
+def calculate(noSpacesStr):
+    noSpacesStr = noSpacesStr.replace(" ", "")
     i = 0
     arr = list()
     numStr = ""
-    while i < len(rawString):
-        c = rawString[i]
+    while i < len(noSpacesStr):
+        c = noSpacesStr[i]
         if c.isdigit() or c == ".":
             numStr += c
         else:
